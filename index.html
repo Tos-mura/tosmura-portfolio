@@ -1,80 +1,4 @@
-<!DOCTYPE html>
-<!-- saved from url=(0074)https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tosmura Portfolio</title>
-    <link rel="stylesheet" href="./index_files/pico.min.css">
-    <style>
-      body { background-color: #fdfdfd; }
-      .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-      .gallery-item {
-        width: calc(25% - 1rem);
-        position: relative;
-        cursor: pointer;
-      }
-      .gallery-item img {
-        width: 100%;
-        border-radius: 6px;
-        object-fit: cover;
-      }
-      .tag-filter {
-        display: flex;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-        flex-wrap: nowrap;
-        justify-content: center;
-      }
-      .tag-filter button {
-        padding: 0.25rem 0.5rem;
-        font-size: 0.8rem;
-        background-color: #ccc;
-        color: #000;
-        border: none;
-        border-radius: 4px;
-        white-space: nowrap;
-      }
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        align-items: center;
-        justify-content: center;
-      }
-      .modal img {
-        max-width: 90%;
-        max-height: 80vh;
-        border-radius: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="container-fluid">
-      <ul><li><strong>Tosmura Portfolio</strong></li></ul>
-      <ul>
-        <li><a href="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html#">Home</a></li>
-        <li><a href="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html#">Gallery</a></li>
-        <li><a href="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html#" role="button">Contact</a></li>
-      </ul>
-    </nav>
 
-    <main class="container">
-      <div class="tag-filter">
-        <button onclick="filterSelection(&#39;all&#39;)">All</button>
-        <button onclick="filterSelection(&#39;gallery&#39;)">Gallery</button>
-      </div>
-
-      <div class="gallery">
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_1930.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_2060.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_2111.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
@@ -89,52 +13,77 @@
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_3687.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_4459.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
         <div class="gallery-item gallery" style="display: block;"><img src="./images/DS1_5256.jpg" alt="Gallery Image" onclick="openModal(this.src)"></div>
-      </div>
-    </main>
 
-    <section aria-label="Subscribe example">
-      <div class="container">
-        <article>
-          <hgroup>
-            <h2>Subscribe for Updates</h2>
-            <h3>Get notified about new photos and projects</h3>
-          </hgroup>
-          <form class="grid">
-            <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required="">
-            <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required="">
-            <button type="submit" onclick="event.preventDefault()">Subscribe</button>
-          </form>
-        </article>
-      </div>
-    </section>
-
-    <footer class="container">
-      <small><a href="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html#">Terms</a> • <a href="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html#">Privacy</a></small>
-    </footer>
-
-    <div class="modal" id="imgModal" onclick="closeModal()">
-      <img id="modalImg" src="https://designergpt.replit.app/pages/4b604c7403ee67a7ab0eeabe738640fe.html" alt="Expanded View">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tosmura Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tosmura Portfolio</h1>
+    <div class="grid">
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_1930.jpg" alt="DS1_1930" style="width:100%">
+        <figcaption>DS1_1930.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2060.jpg" alt="DS1_2060" style="width:100%">
+        <figcaption>DS1_2060.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2111.jpg" alt="DS1_2111" style="width:100%">
+        <figcaption>DS1_2111.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2628.jpg" alt="DS1_2628" style="width:100%">
+        <figcaption>DS1_2628.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2722.jpg" alt="DS1_2722" style="width:100%">
+        <figcaption>DS1_2722.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2880.jpg" alt="DS1_2880" style="width:100%">
+        <figcaption>DS1_2880.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2887.jpg" alt="DS1_2887" style="width:100%">
+        <figcaption>DS1_2887.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2941.jpg" alt="DS1_2941" style="width:100%">
+        <figcaption>DS1_2941.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_2988.jpg" alt="DS1_2988" style="width:100%">
+        <figcaption>DS1_2988.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_3278.jpg" alt="DS1_3278" style="width:100%">
+        <figcaption>DS1_3278.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_3296.jpg" alt="DS1_3296" style="width:100%">
+        <figcaption>DS1_3296.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_3687.jpg" alt="DS1_3687" style="width:100%">
+        <figcaption>DS1_3687.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_4459.jpg" alt="DS1_4459" style="width:100%">
+        <figcaption>DS1_4459.jpg</figcaption>
+      </figure>
+      <figure>
+        <img src="/tosmura-portfolio/images/DS1_5256.jpg" alt="DS1_5256" style="width:100%">
+        <figcaption>DS1_5256.jpg</figcaption>
+      </figure>
     </div>
+  </main>
+</body>
+</html>
 
-    <script>
-      function openModal(src) {
-        document.getElementById("modalImg").src = src;
-        document.getElementById("imgModal").style.display = "flex";
-      }
-      function closeModal() {
-        document.getElementById("imgModal").style.display = "none";
-      }
-      function filterSelection(tag) {
-        const items = document.querySelectorAll(".gallery-item");
-        items.forEach((item) => {
-          if (tag === "all" || item.classList.contains(tag)) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
-        });
-      }
-      filterSelection("all");
-    </script>
-  
-</body></html>
