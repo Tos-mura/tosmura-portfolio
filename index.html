@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0074)https://designergpt.replit.app/pages/476abd882b886462ba89f7b49790fbfa.html -->
+<!-- saved from url=(0074)https://designergpt.replit.app/pages/75ce267fef5e157fe081686b853976f8.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +10,13 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      justify-content: center;
     }
     figure {
-      flex: 1 1 calc(20% - 1rem);
+      flex: 1 1 calc(20% - 1rem); /* 5列（100/5） */
       max-width: calc(20% - 1rem);
+      box-sizing: border-box;
+      margin: 0;
     }
     figure img {
       width: 100%;
@@ -44,27 +47,21 @@
   <main class="container">
     <h1>Tosmura Portfolio</h1>
     <div class="grid">
-      <figure>
-        <img src="./index_files/DS1_1930.jpg" alt="DS1_1930" onclick="openModal(this.src)">
-      </figure>
-      <figure>
-        <img src="./index_files/DS1_2060.jpg" alt="DS1_2060" onclick="openModal(this.src)">
-      </figure>
-      <figure>
-        <img src="./index_files/DS1_2111.jpg" alt="DS1_2111" onclick="openModal(this.src)">
-      </figure>
-      <figure>
-        <img src="./index_files/DS1_2628.jpg" alt="DS1_2628" onclick="openModal(this.src)">
-      </figure>
-      <figure>
-        <img src="./index_files/DS1_2722.jpg" alt="DS1_2722" onclick="openModal(this.src)">
-      </figure>
-      <!-- Add more as needed -->
+      <figure><img src="./index_files/DS1_1930.jpg" alt="DS1_1930" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2060.jpg" alt="DS1_2060" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2111.jpg" alt="DS1_2111" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2628.jpg" alt="DS1_2628" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2722.jpg" alt="DS1_2722" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2880.jpg" alt="DS1_2880" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2887.jpg" alt="DS1_2887" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2941.jpg" alt="DS1_2941" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_2988.jpg" alt="DS1_2988" onclick="openModal(this.src)"></figure>
+      <figure><img src="./index_files/DS1_3278.jpg" alt="DS1_3278" onclick="openModal(this.src)"></figure>
     </div>
   </main>
 
   <div class="modal" id="imgModal" onclick="closeModal()">
-    <img id="modalImg" src="https://designergpt.replit.app/pages/476abd882b886462ba89f7b49790fbfa.html" alt="Expanded View">
+    <img id="modalImg" src="https://designergpt.replit.app/pages/75ce267fef5e157fe081686b853976f8.html" alt="Expanded View">
   </div>
 
   <script>
